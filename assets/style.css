@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gray-section-color: #edebe4;
+  --white-section-color: #f3f2ec;
+}
+h2, .card-title, h4, .hero h5 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* nav */
+nav,.hero, .featured-books, .popular-books, footer {
+  background-color: var(--white-section-color);
+}
+nav img, footer img {
+  width: 12rem;
+}
+ul .active {
+  color: #e1ac56 !important;
+}
+/* nav
+
+/* hero */
+.hero {
+  height: fit-content;
+  padding-top: 72px;
+}
+.hero-content {
+  color: black !important;
+  text-align: start !important;
+  width: 400px;
+  margin: 30px;
+}
+.hero-content h5 {
+  font-size: 60px;
+}
+.hero-content button {
+  color: #c8ae99 ;
+  border: 1px solid #c8ae99;
+  transition: 0.8s;
+}
+.hero-content button:hover {
+  background-color: #c8ae99;
+  color: #fff;
+  border: 1px solid #c8ae99;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c ;
+  border-radius: 50%;
+  padding: 5px;
+}
+.carousel-item img {
+  width: 330px;
+  margin: 30px;
+}
+/* client section */
+.client,.best-selling-books, .newsletter {
+  background-color: var(--gray-section-color);
+}
+/* client section */
+
+/* Featured-books */
+h2 {
+  font-size: 3rem;
+}
+.featured-books h2:before, .featured-books h2:after,
+.popular-books h2:before, .popular-books h2:after {
+  content: "";
+  width: 27%;
+  height: 1px;
+  background-color: #dee2e6 ;
+  position: absolute;
+  top: 40%;
+}
+.featured-books h2:before,
+.popular-books h2:before {
+  left: 0;
+}
+.featured-books h2:after,
+.popular-books h2:after {
+  right: 0;
+}
+
+h2 span {
+  background-color: var(--white-section-color);
+}
+.card-title {
+  color: #74642f;
+}
+.card img {
+  width: 16rem;
+  background-color: #efeee8;
+}
+.featured-books a, .best-selling-books a {
+  color: black;
+  transition: all 0.3s;
+}
+.featured-books a:hover, .best-selling-books a:hover,
+footer ul li a:hover, footer span a:hover, footer i:hover {
+  color: rgba(0, 0, 255, 0.708);
+}
+.cart {
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card:hover .cart {
+  opacity: 1;
+}
+.card {
+  background-color: var(--white-section-color);
+}
+/* Featured-books */
+
+/* best-selling-books */
+.best-selling-books h2::after, .newsletter-title h2::after {
+  content: "";
+  height: 4px;
+  width: 46px;
+  background-color: #74642f;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-radius: 5px;
+}
+.best-selling-books h2 { 
+  width: 75%;
+}
+.best-selling-cover {
+  width: 20rem;
+}
+.best-books p {
+  width: 15rem;
+}
+/* best-selling-books */
+
+/* popular-books */
+.popular-books ul li {
+  cursor: pointer;
+}
+.popular-books ul li {
+  color: #999999;
+}
+.popular-books .active-li {
+  color: black;
+  border-bottom: 2px solid #74642f ;
+}
+/* popular-books */
+
+/* newsletter */
+.newsletter-title h2, .newsletter p {
+  width: 21rem;
+}
+.newsletter p, .newsletter label {
+  font-size: 18px;
+}
+.newsletter input {
+  background-color: transparent;
+  border: none;
+  border-bottom:  1px solid black;
+}
+.newsletter input:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: black;
+}
+.newsletter button {
+  font-size: 20px;
+  /* padding-bottom: 12px; */
+}
+/* newsletter */
+
+/* footer */
+footer p {
+  width: 15rem;
+}
+footer ul {
+  line-height: 40px;
+}
+footer ul li a, .social-media i {
+  color: black;
+  transition: .3s;
+}
+footer span a {
+  color: #c5a99e;
+  transition: .3s;
+}
+/* footer */
+
+@media (max-width:897px) {
+  .carousel-control-next, .carousel-control-prev {top: -600px; }
+}
+@media (max-width:768px) {
+  .featured-books h2, .popular-books h2 { font-size: 2.5rem; border-bottom: 1px solid #dee2e6 ;}
+  .featured-books h2:before, .featured-books h2:after, 
+  .popular-books h2:before, .popular-books h2:after { display: none;}
+  .best-selling-books h2, .newsletter p, .newsletter h2 { width: 100%;}
+}
+@media (max-width:576px) {
+  nav img { width: 10rem;}
+  .carousel-item img { width: 280px;}
+  .best-selling-books h2, .newsletter h2, .hero h5 { font-size: 2.5rem;}
+  .newsletter label, .newsletter p { font-size: 17px;}
+  .newsletter button, .copy-right { font-size: 15px;}
+}
+
+

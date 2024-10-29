@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> API </title>
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font-awesome -->
+
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap -->
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/style.css">
+  <!-- css -->
+</head>
+
+<body>
+  <header>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg py-2 px-3 px-md-5 border-bottom fixed-top">
+      <h1>
+        <img src="./assets/images/logo.png" alt="logo">
+      </h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link active mx-2" aria-current="page" href="#home"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#featured"> Featured </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" aria-current="page" href="#popular"> Popular </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav -->
+
+
+    <!-- hero -->
+    <section class="hero">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center flex-wrap-reverse gap-5">
+              <div class="hero-content">
+                <h5 class="text-center text-md-start"> Life Of The Wild </h5>
+                <p class="text-black-50 lh-lg text-center text-md-start">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi consequuntur accusamus maxime. Ducimus, culpa corrupti
+                  facilis iure excepturi impedit alias nulla adipisci.Ducimus, culpa corrupti
+                  facilis iure excepturi impedit alias.
+                </p>
+                <div class="text-center text-md-start">
+                  <button class="btn my-5 rounded-0 fw-semibold text-uppercase position-relative">
+                    Read More
+                    <i class="fa-solid fa-arrow-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="./assets/images/main-banner1.jpg" alt="book_1">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center flex-wrap-reverse gap-5">
+              <div class="hero-content">
+                <h5 class="text-center text-md-start"> Life Of The Wild </h5>
+                <p class="text-black-50 lh-lg text-center text-md-start">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Animi consequuntur accusamus maxime. Ducimus, culpa corrupti
+                  facilis iure excepturi impedit alias nulla adipisci.Ducimus, culpa corrupti
+                  facilis iure excepturi impedit alias.
+                </p>
+                <div class="text-center text-md-start">
+                  <button class="btn my-5 rounded-0 fw-semibold text-uppercase position-relative">
+                    Read More
+                    <i class="fa-solid fa-arrow-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+              <img src="./assets/images/main-banner2.jpg" alt="book_2">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <i class="fa-solid fa-arrow-left fs-2"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right fs-2"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- hero -->
+    
+  </header>
+  <!-- main -->
+  <main>
+    <!-- client  -->
+    <section class="client py-5 px-5">
+      <div class="d-flex justify-content-center justify-content-center flex-wrap gap-3">
+        <img src="./assets/images/client-image1.png" alt="client 1">
+        <img src="./assets/images/client-image2.png" alt="client 2">
+        <img src="./assets/images/client-image3.png" alt="client 3">
+        <img src="./assets/images/client-image4.png" alt="client 4">
+        <img src="./assets/images/client-image5.png" alt="client 5">
+      </div>
+    </section>
+    <!-- client  -->
+
+    <!-- featured-books -->
+    <section class="featured-books py-5" id="featured">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="mb-4 text-body-tertiary text-uppercase"> Some Quality Items </h6>
+          <h2 class="position-relative pb-4"> Featured Books </h2>
+        </div>
+        <div id="featured-book" class=" d-flex justify-content-center flex-wrap gap-4 my-5 border-bottom"></div>
+        <div class="text-end">
+          <a class="fw-semibold link-underline link-underline-opacity-0" href="#">
+            View All Products
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- featured-books -->
+
+    <!-- best-selling-books -->
+    <section class="best-selling-books py-5 px-3">
+      <div class="d-flex justify-content-center flex-wrap gap-5">
+        <div class="best-selling-cover"> </div>
+        <div>
+          <h2 class="mt-5 mb-4 position-relative"> Best Selling Books </h2>
+          <div class="best-selling-content"> </div>
+          <a class="fw-semibold link-underline link-underline-opacity-0" href="#"> Shop It Now
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- best-selling-books -->
+
+    <!-- popular-books -->
+    <section class="popular-books py-5" id="popular">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="mb-4 text-body-tertiary text-uppercase"> Some Quality Items </h6>
+          <h2 class="position-relative pb-4"> Popular Books </h2>
+        </div>
+        <ul class="d-flex justify-content-center flex-wrap gap-4 my-5">
+          <li class="fw-bold pb-2 list-unstyled active-li"> All Genre </li>
+          <li class="fw-bold pb-2 list-unstyled"> Business </li>
+          <li class="fw-bold pb-2 list-unstyled"> Technology </li>
+          <li class="fw-bold pb-2 list-unstyled"> Romantic </li>
+          <li class="fw-bold pb-2 list-unstyled"> Adventure </li>
+          <li class="fw-bold pb-2 list-unstyled"> Fictional </li>
+        </ul>
+        <div id="popular-book" class="position-relative d-flex justify-content-around flex-wrap gap-4"></div>
+      </div>
+    </section>
+    <!-- popular-books -->
+
+    <!-- newsletter -->
+    <section class="newsletter py-5">
+      <div class="container d-flex justify-content-center flex-wrap gap-3">
+        <div class="newsletter-title mt-4">
+          <h2 class="position-relative"> Subscribe To Our Newsletter </h2>
+        </div>
+        <div>
+          <p class="text-black-50 lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam consequatur tenetur eaque exercitationem natus.
+            Quisquam consequatur tenetur.
+          </p>
+          <form class="mb-3">
+            <div class="mt-5 d-flex justify-content-between align-items-center">
+              <label for="exampleFormControlInput1" class="form-label m-0 text-black-50">
+                Enter your email address here
+              </label>
+              <button class="btn text-uppercase fw-semibold">
+                Send <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+            <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- newsletter -->
+
+    <!-- footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 d-flex flex-column align-items-center">
+            <img class="my-5" src="./assets/images/logo.png" alt="logo">
+            <p class="text-center text-black-50 lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate fuga provident iusto eius ullam itaque porro
+              corrupti voluptate totam aliquid quae,
+              optio sed voluptates eos explicabo minus non quas fugiat.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12">
+            <ul class="text-center">
+              <h4 class="my-5 fs-4"> About Us </h4>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  vision
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  articles
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  careers
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  service item
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  donate
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12">
+            <ul class="text-center">
+              <h4 class="my-5 fs-4"> Discover </h4>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Books
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Authors
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Subject
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Advances Search
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12">
+            <ul class="text-center">
+              <h4 class="my-5 fs-4"> My Account </h4>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Sign in
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  View Cart
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  My Wishtlist
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Track My Order
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12">
+            <ul class="text-center">
+              <h4 class="my-5 fs-4"> Help </h4>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Help Center
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Report a problem
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Suggesting Edits
+                </a>
+              </li>
+              <li class="list-unstyled">
+                <a class="link-underline link-underline-opacity-0" href="#">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-black-50 pt-5 mt-5 border-top d-flex justify-content-around flex-wrap gap-5">
+        <div class="copy-right fw-semibold text-center text-md-start">
+          &copy; 2022 All rights reserved. Free HTML Template by
+          <span>
+            <a class="link-underline link-underline-opacity-0" href="#">
+              TemplatesJungle
+            </a>
+          </span>
+        </div>
+        <div class="social-media">
+          <a class="link-underline link-underline-opacity-0" href="#">
+            <i class="fa-brands fa-facebook-f mx-3 fs-5"></i>
+          </a>
+          <a class="link-underline link-underline-opacity-0" href="#">
+            <i class="fa-brands fa-twitter mx-3 fs-5"></i>
+          </a>
+          <a class="link-underline link-underline-opacity-0" href="#">
+            <i class="fa-brands fa-youtube mx-3 fs-5"></i>
+          </a>
+          <a class="link-underline link-underline-opacity-0" href="#">
+            <i class="fa-brands fa-square-behance mx-3 fs-5"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </main>
+  <!-- main -->
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap -->
+
+  <!-- script -->
+  <script src="./assets/main.js"></script>
+  <!-- script -->
+</body>
+
+</html>
