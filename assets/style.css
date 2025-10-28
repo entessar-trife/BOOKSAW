@@ -89,10 +89,6 @@ h2 {
 .popular-books h2:after {
   right: 0;
 }
-
-h2 span {
-  background-color: var(--white-section-color);
-}
 .card-title {
   color: #74642f;
 }
